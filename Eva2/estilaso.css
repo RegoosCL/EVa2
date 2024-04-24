@@ -13,7 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.containe{ /* Definir tamaño del contenido para que se centre */
+.container{ /* Definir tamaño del contenido para que se centre */
     max-width: 1200px;
     margin: 0 auto;
 }
