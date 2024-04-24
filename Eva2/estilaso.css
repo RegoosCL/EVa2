@@ -1,0 +1,220 @@
+
+/*css para toda la parte de arriba de la pagina */
+
+*{
+    margin: 0; /* Resetear */
+    padding: 0; 
+    box-sizing: border-box; /* Aplicar el padding en algunos lado para que no quede mal */
+    text-decoration: none; /* Quita las lineas de los enlaces */
+    list-style: none; /* Quita los punto/bolitas de las listas */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{ /* Definir tamaño del contenido para que se centre */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main { 
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(imagen/portada.jpg) center bottom no-repeat; /* Fondo oscuro a la imagen y el center bottom para que quede centrado la imagen y el no-repeat para que no se repita la imagen*/
+    background-size: cover; /* Cubre el ancho y la altura */
+    min-height: 70vh; /* Tamaño del main */
+    display: flex; 
+    align-items: center; /* Centrar todo */
+}
+
+.menu{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Dejar separacion entre ellos */
+}
+
+.menu .navbar ul li { /* Dejar los enlances(lista) a al derecha */
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px; /* Tamaño de los enlaces */
+    padding: 20px; 
+    color: #fffddf;
+    display: block; /* Para que el padding se coloque correctamente al abrir el menu */
+}
+
+.menu .navbar ul li a:hover{ /* Cambia de color cuando se pasa el mouse por encima */
+    color: burlywood;
+}
+
+#menu{ /* Esconce el punto de checkbox */
+    display: none;
+}
+
+.menu-icono{ /* Tamaño de la imagen que funciona como checkbox */
+    width: 30px;
+}
+
+.menu label {
+    cursor: pointer; /* Hace que como si fuera un href la imagen que funciona como checkbox */
+    display: none;
+}
+
+.main-content{ /* Centra todo los elementos */
+    text-align: center;
+}
+
+.main-content h1{
+    font-size: 50px; /* Tamaño de letra */
+    line-height: 70px; /* Altura letra */
+    color: #f9fafc;
+    text-transform: uppercase; /* Todo a mayuscula */
+    margin-bottom: 35px; /* Espacio de la parte inferios del elemento */
+    
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #c5c5c5c5;
+    padding: 0px 250px;
+    margin-bottom: 50px;
+}
+    
+.qiesomo { 
+    padding: 11px 35px;
+    background-color: burlywood;
+    color: #f9fafc;
+    text-transform: uppercase; /* Mayusculas */
+    border: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.qiesomo:hover{
+    background-color: #c5c5c5c5;
+}
+
+/*css para el menu responsivo */
+
+@media(max-width:900px){ /* este media es para crear el menu responsivo donde cuando llegue a los 900px se coloque la imagen para que salga el menu */
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial; 
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%; /* para que se coloque arriba */
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none; /* para no aparecerlo hasta que llegue a los 900px */
+    }
+
+    .menu .navbar ul li {   /* Al apretar la imagen del menu se vea para abajo y no desordenado */
+        width: 100%; 
+    }
+
+    #menu:checked ~ .navbar{ /* Con esto se abre el menu dentro de la imagen(checkbox) */
+        display: initial;
+    }
+
+    .main-content p {
+        padding: 0; /* padding para que le texto no se vea feo y todo para abajo */
+    }
+}
+
+/*css de los productos */
+
+.container-producto {
+    background-color: #411f01c5;
+    color: #f9fafc;
+    
+}
+
+.container-producto h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px; /* Separacion del producto */
+    padding: 60px;
+    
+}
+
+.container-producto img  {
+    border-radius: 30px; /* Bordes redondos */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); /* Sombra por aparte de atras de la imagen */
+}
+
+
+.container-producto button{
+    padding: 5px 15px;
+    background-color: #e0d9b7;
+    border: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container-producto button:hover{
+    background-color: #29b64d;
+}
+
+table{
+    justify-content: center;
+    display: grid;
+}
+
+
+/*css del formulario */
+
+#contacto {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.redes{
+    float: left; /* float para que se coloque a la par de los derechos del autor */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+}
+

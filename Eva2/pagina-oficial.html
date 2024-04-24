@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegoStore</title>
+    <link rel="stylesheet" href="estilaso.css">
+</head>
+<body>
+    
+    <main class="main">
+
+        <div class="menu container">
+            <a href="#" class="logo">
+                <img src="imagen/logo.png" width="70">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu"> <!--Guarda la id menu del input para usarla en el label y que la imagen funcione como checkbox-->
+                <img src="imagen/menu.png" class="menu-icono" alt="">
+            </label>
+            <div class="navbar"> <!--Una navegacion que guarda una clase para usarla como lista-->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#nosotros">Quiénes somos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#productos">Productos</a></li> <!--OTRA-->
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content container">
+
+            <h1>RegoStore</h1>
+            <p>Bienvenidos a RegoStore, tu destino para la moda contemporánea. 
+                Descubre nuestra selección de polerones, pantalones y poleras, 
+                diseñados para reflejar tu estilo único. Explora ahora y encuentra 
+                la pieza perfecta para tu armario en RegoStore.
+            </p>
+            <a href="nosotro.html"  class="qiesomo" target="_blank">Quiénes somos</a>
+
+        </div>
+    
+    </main>
+
+    <section class="container-producto" id="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <div>
+                    <table>
+                        <td><a href="producto1.html">
+                            <img src="imagen/poleron.png" width="200">
+                        </a></td>
+                    </table>
+                    <table>
+                        <th><h3>Manfinity Homme Sudadera</h3></th>
+                    </table>    
+                    <table>
+                       <td><p>$29.990</p></td>
+                    </table>
+                    <table>
+                        <td><button onclick="alert ('Producto añadido al carrito');">Añadir al carrito</button></td>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <td><a href="producto2.html">
+                            <img src="imagen/pantalon.png" width="200">
+                        </a></td>
+                    </table>
+                    <table>
+                        <th><h3>Pantalones Cargo Holgados</h3></th>
+                    </table>
+                    <table>
+                        <td><p>$29.990</p></td>
+                    </table>
+                    <table>
+                        <td><td><button onclick="alert ('Producto añadido al carrito');">Añadir al carrito</button></td></td>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <td> 
+                            <a href="producto3.html">
+                                <img src="imagen/polera.png" width="200">
+                            </a>
+                        </td>
+                    </table>
+                    <table>
+                        <th><h3>Manfinity Homme Camisa</h3></th>
+                    </table>
+                    <table>
+                        <td><p>$29.990</p></td>
+                    </table>
+                    <table>
+                        <td><button onclick="alert ('Producto añadido al carrito');">Añadir al carrito</button></td>
+                    </table>
+                </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <div>
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros para más información sobre nuestros productos.</p>
+            <form action="gracias.html">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="redes">
+            <a href="https://www.inacap.cl" target="_blank">
+                <img src="imagen/inacaplogo.png" width="60">
+            </a>
+            <a href="https://www.instagram.com/j.vierr_r/" target="_blank">
+                <img src="imagen/instalogo.png" width="30">
+            </a>
+            <br>
+        </div>
+        <p>&copy; 2024 Regostore. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
